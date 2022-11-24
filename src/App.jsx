@@ -1,6 +1,6 @@
+import './App.scss'
 import { useState } from 'react';
 import { Button } from 'semantic-ui-react';
-import './App.scss'
 import LineChart from './components/LineChart';
 import Temperature from './components/Temperature';
 import Time from './components/Time';
@@ -19,7 +19,7 @@ function App() {
     min: new Date().getMinutes(),
     sec: new Date().getSeconds()
   })
-  const [dataTemperture, setDataTemperture] = useState(50)
+  const [dataTemperture, setDataTemperture] = useState(35)
   const [dataHumidity, setDataHumidity] = useState(15)
 
   const handleClick1 = () => {
